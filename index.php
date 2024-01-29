@@ -1,7 +1,9 @@
   <!-- Afficher le titre dans le "title" du site -->
-  <?php $title = "Salle De Sport." ?>
+  <?php $title = "" ?>
+ 
   <!-- INSERER LE HEADER -->
   <?php require('header.php'); ?>
+  <?php require('function.php'); ?>
   
   <!-- CORPS DE TEXTE -->
   <main>
@@ -101,19 +103,15 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="assets/img/activites/bg_activite_1.jpg" class="imagebox mb-4" alt="...">
+            <img src=<?php echo $articles1["url_img"]?> class="imagebox mb-4" alt="...">
             <div>
-              <p class="card-text"><strong>28 OCTOBRE 2024</strong></p>
-              <h3 class="card-title"><strong>TITRE DE L'ACTUALITÉ SUR UNE OU DEUX LIGNES EN MAJIUSCULE</strong></h3>
-              <p class="card-text ptext mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate
-                cupiditate
-                similique temporibus. Voluptatem laborum iste id laboriosam itaque voluptas. Ipsa in laboriosam
-                corporis
-                obcaecati dolorem est cumque porro voluptatum?</p>
-              <a class="mainlink1" href="/404.html">
+                <p class="card-text"><strong><?php echo $articles1["date"]?></strong></p>
+                <h3 class="card-title"><strong><?php echo $articles1["titre"]?></strong></h3>
+                <p class="card-text ptext mb-2"><?= $articles1["text"]?></p>
+                <a class="mainlink1" href=<?php echo $articles1["url_lien"]?>>
                 <p><strong>LIRE LA SUITE</strong></p>
                 <img class="imglink1" src="assets/img/bg_titre.jpg" alt="">
-              </a>
+                </a>
             </div>
           </div>
         </div>

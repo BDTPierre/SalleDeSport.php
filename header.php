@@ -44,8 +44,9 @@
             </li>
             <?php echo navlink("/404.php" , "nos offres") ?> 
             <?php echo navlink("/404.php" , "planning") ?> 
-            <?php echo navlink("/404.php" , "Le blog") ?> 
-            <?php echo navlink("/404.php" , "contact") ?> 
+            <?php echo navlink("/404.php" , "Contact") ?> 
+            <?php echo navlink("/index.php" , "Pierre") ?> 
+            <?php echo navlink("/404.php" , "planning") ?> 
           </ul>
           <a id="numberPhone" class="link ps-1" href="tel:060606060606"><img src="assets/img/facebook.png" alt="">05 59
             47 84 18</a>
